@@ -1,9 +1,8 @@
-from datetime import datetime
-today = datetime.today()
-def get_days_from_today(date):
-    try:
-        given_date = datetime.fromisoformat(date)
-        return int(today.toordinal() - given_date.toordinal())
-    except ValueError:
-        return "The date is not correct"
-print(get_days_from_today("07-10-2024"))
+def get_numbers_ticket(min, max, quantity):
+    import random
+    if min >= 1 and max <=1000 and min < quantity < max:
+        return random.sample(range(min, max), quantity)
+    else:
+        return []
+
+print(get_numbers_ticket(1, 89, 7))
