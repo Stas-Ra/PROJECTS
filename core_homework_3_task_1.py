@@ -6,4 +6,4 @@ def get_days_from_today(date):
         return int(today.toordinal() - given_date.toordinal())
     except ValueError:
         return "The date is not correct"
-print(get_days_from_today("07-10-2024"))
+print(get_days_from_today("2024-12-03"))
