@@ -15,8 +15,9 @@ for number in numbers:
     pattern = r"\D"
     replacement = ""
     normalize_phone = re.sub(pattern, replacement, number)
-    print(normalize_phone)
-    def num(normalize_phone):
+    sanitized_numbers = normalize_phone[-10:-1]
+    print(sanitized_numbers)
+    # def num(normalize_phone):
 
 
 # sanitized_numbers = []
