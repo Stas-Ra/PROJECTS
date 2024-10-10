@@ -5,4 +5,4 @@ def get_numbers_ticket(min, max, quantity):
     else:
         return []
 
-print(get_numbers_ticket(1, 5, 4))
+print(sorted(get_numbers_ticket(1, 36, 6)))
